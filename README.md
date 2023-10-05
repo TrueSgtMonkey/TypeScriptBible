@@ -10,6 +10,5 @@
     * This is to explain concepts though, and not for normal project readability.
 
 # Table of Contents
-test
 * [Typescript Bible](./TYPESCRIPT_BIBLE.md)
 * [Lesson 1: Adding Example](./00-adding-example/ADDING.md)

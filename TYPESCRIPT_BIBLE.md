@@ -1,7 +1,8 @@
 [Back](./README.md)
 
-# Symbols
-## !
+# Language Syntax (with examples)
+## Symbols
+### !
 Means that we are sure that an element will not be null:
 ```ts
 const input1 = document.getElementById("num1")!;
@@ -9,8 +10,8 @@ const input1 = document.getElementById("num1")!;
 Use this only when you have already checked and the HTML element will most likely never be tampered with.
 * Unsure if this is good practice or not.
 
-# Keywords
-## as
+## Keywords
+### as
 This is the typecasting keyword in typescript.
 ```ts
 const input1 = document.getElementById("num1")! as HTMLInputElement;
