@@ -3,8 +3,9 @@
 # KEY TAKEAWAYS
 * Javascript would require *a bunch* of manual checks to have the same effectiveness that typescript has, and then we end up with ugly Javascript.
 
-# Typescript Language Learnings
-## !
+# Syntax
+## Symbols
+### !
 Means that we are sure that an element will not be null:
 ```ts
 const input1 = document.getElementById("num1")!;
@@ -12,7 +13,8 @@ const input1 = document.getElementById("num1")!;
 Use this only when you have already checked and the HTML element will most likely never be tampered with.
 * Unsure if this is good practice or not.
 
-## as
+## Keywords
+### as
 This is the typecasting keyword in typescript.
 ```ts
 const input1 = document.getElementById("num1")! as HTMLInputElement;
