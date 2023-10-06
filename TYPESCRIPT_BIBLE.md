@@ -5,8 +5,8 @@
 * [Symbols](#symbols)
     * [! (after element)](#when-used-after-an-element)
     * [! (before element)](#when-used-before-an-element)
-    * [?](#2)
-    * [===](#3)
+    * [?](#nullish-check-generates-undefined)
+    * [===](#exact-equality-check)
 * [Keywords](#keywords)
     * [as](#as)
     * [typeof](#typeof)
@@ -78,6 +78,7 @@ function example (foobar: NestedObject): string {
 ```
 _____________________________
 ### ?
+#### nullish check (generates undefined)
 If something is null, this will generate an 'undefined' at that line
 * Similar to the '!' keyword, but won't cause errors if something goes wrong.
 
@@ -91,6 +92,7 @@ function example (foobar: NestedObject): string {
 ```
 _____________________________
 ### ===
+#### Exact Equality Check
 Checks if two variables are "exactly" equal to each other.
 * Checks value and data type.
 ```ts
