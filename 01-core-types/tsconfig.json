@@ -4,7 +4,9 @@
 // the future?
 {
     "compilerOptions": {
-        "outDir": "./dist",
+        "target": "ES5",
+        "outDir": "dist",
+        "rootDir": "./"
     },
     "include": ["test.ts", "types.ts"]
 }

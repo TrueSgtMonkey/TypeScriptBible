@@ -1,0 +1,19 @@
+{
+    "dirs" : {
+        "1" : {
+            "path" : "./00-adding-example/00-first-project-adjusted/dist/",
+            "cmds" : {
+                "1" : "node test.js"
+            },
+            "dirDepth" : 3
+        },
+        "2" : {
+            "path" : "./01-core-types/dist",
+            "cmds" : {
+                "1" : "node test.js",
+                "2" : "node types.js"
+            },
+            "dirDepth" : 2
+        }
+    }
+}
