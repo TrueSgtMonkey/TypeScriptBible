@@ -86,6 +86,91 @@ const betterPerson = {
 }
 ```
 
+## Arrays
+* Can have mixed data.
+```ts
+// Here, this array can host different types of objects/data types
+function arraysExample(): void {
+    const arr = [1, 'paul', true, {'poop' : 3}];
+
+    for (let num: number = 0; num < arr.length; num++) {
+        console.log('arr[' + num + ']: ' + arr[num]);
+    }
+
+    //... The rest of the function
+```
+When we hover over 'arr', here is how Visual Studio Code displays the type:
+
+![array_type_inference_visual_studio_code](./images/array_type_inference_visual_studio_code.png)
+
+***Note***: This is a **union** type.
+
+While the example above is fine since typescript was able to infer the type, the one below will cause errors:
+* **Note** that this is in the same function as the example above.
+```ts
+    let strArray: string[];
+    strArray = ['test', 3];
+```
+![array_of_string_types](.\images\array_of_string_types.png)
+
+* This also means that this ***NEEDS*** to be an array as well.
+    * An array that only includes string values.
+
+```ts
+    let strArray: string[];
+    strArray = ['test1', 'test2', 'milk kell'];
+    for (const element of strArray) {
+        console.log(element);
+    }
+```
+Above is a valid loop iterating over an array of strings.
+
+Here is the output of that code:
+```
+test1
+test2
+milk kell
+```
+
+Note that we can also perform functions on each element while iterating:
+```ts
+    for (const element of strArray) {
+        console.log(element.toUpperCase());
+    }
+```
+```
+TEST1
+TEST2
+MILK KELL
+```
+
+## Tuples
+Fixed-length and Fixed-type array
+* Also fixed type as well!
+
+![tuple_union_example](./images/tuple_union_example.png)
+* Typescript knows that this is an array with a string and a number type.
+* It does ***NOT*** know that there are only two elements.
+
+Here is an example of an object:
+```ts
+const example = {
+    tup: [2, 'test']
+};
+```
+We expect that the tuple only has a number and a string in the array.
+```ts
+// Although we want to keep this as a tuple with integer in [0] and string
+// in [1], typescript still allows us to do this:
+example.tup.push('uh oh');
+example.tup[1] = 15;
+console.log(example);
+```
+However, as we see here, we can make it 3 elements and change the elements in this array to become a string or integer.
+
+The only thing we cannot do (of course) is give it a boolean or something:
+![tuple_cannot_reassign_differing_types](./images/tuple_cannot_reassign_differing_types.png)
+
 # Language Syntax (with examples)
 ## Symbols
 ### ===

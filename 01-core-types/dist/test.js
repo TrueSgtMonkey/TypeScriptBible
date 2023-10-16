@@ -8,7 +8,8 @@ function main() {
         '1) test functions\n' +
         '2) adding example (with inputs)\n' +
         '3) typeof keyword example\n' +
-        '4) exact match example');
+        '4) exact match example\n' +
+        '5) arrays example');
     // this would otherwise be in the stdout, but prompt eats up the current
     // line of console output if you do not pass in anything.
     var userInput = prompt('Choice: ');
@@ -21,6 +22,28 @@ function main() {
             typeofExample();
         case '4':
             exactMatchExample();
+        case '5':
+            arraysExample();
+    }
+}
+function arraysExample() {
+    var arr = [1, 'paul', true, { 'poop': 3 }];
+    // Basic for loop using let
+    for (var num = 0; num < arr.length; num++) {
+        console.log('arr[' + num + ']: ' + arr[num]);
+    }
+    // let strArray: string[];
+    // error bound code -- comment to see errors
+    // strArray = ['test', 3];
+    var strArray;
+    strArray = ['test1', 'test2', 'milk kell'];
+    for (var _i = 0, strArray_1 = strArray; _i < strArray_1.length; _i++) {
+        var element = strArray_1[_i];
+        console.log(element);
+    }
+    for (var _a = 0, strArray_2 = strArray; _a < strArray_2.length; _a++) {
+        var element = strArray_2[_a];
+        console.log(element.toUpperCase());
     }
 }
 function addingExampleWithInputs() {

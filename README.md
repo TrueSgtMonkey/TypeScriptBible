@@ -1,8 +1,8 @@
 # Table of Contents
 
 * [Typescript Bible](./TYPESCRIPT_BIBLE.md)
-* [Lesson 1: Adding Example](./00-adding-example/ADDING.md)
-* [Lesson 2: Core Types](./01-core-types/CORE_TYPES.md)
+* [1: Adding Example](./00-adding-example/ADDING.md)
+* [2: Core Types](./01-core-types/CORE_TYPES.md)
 
 # Overall Notes
 ## Project Setup

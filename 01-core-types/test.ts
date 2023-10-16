@@ -12,7 +12,8 @@ function main() {
         '1) test functions\n' +
         '2) adding example (with inputs)\n' +
         '3) typeof keyword example\n' +
-        '4) exact match example'
+        '4) exact match example\n' +
+        '5) arrays example'
     );
 
     // this would otherwise be in the stdout, but prompt eats up the current
@@ -27,6 +28,31 @@ function main() {
             typeofExample();
         case '4':
             exactMatchExample();
+        case '5':
+            arraysExample();
+    }
+}
+
+function arraysExample(): void {
+    const arr = [1, 'paul', true, {'poop' : 3}];
+
+    // Basic for loop using let
+    for (let num: number = 0; num < arr.length; num++) {
+        console.log('arr[' + num + ']: ' + arr[num]);
+    }
+
+    // let strArray: string[];
+    // error bound code -- comment to see errors
+    // strArray = ['test', 3];
+
+    let strArray: string[];
+    strArray = ['test1', 'test2', 'milk kell'];
+    for (const element of strArray) {
+        console.log(element);
+    }
+
+    for (const element of strArray) {
+        console.log(element.toUpperCase());
     }
 }
 
