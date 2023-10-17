@@ -1,3 +1,5 @@
+[Back](../README.md)
+
 # Basic object specification
 ```ts
 // Basic object with name, age, and cool
@@ -43,3 +45,5 @@ const {age, ...rest} = thing;
 * Allows us to call **name** or **cool** *without* having to call **thing.name** or **thing.cool** (respectively).
 * Leaves out age.
     * We won't be able to call age.
+
+[Back](../README.md)

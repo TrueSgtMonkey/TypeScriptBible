@@ -3,6 +3,7 @@
 * [Typescript Bible](./TYPESCRIPT_BIBLE.md)
 * [1: Adding Example](./00-adding-example/ADDING.md)
 * [2: Core Types](./01-core-types/CORE_TYPES.md)
+* [3: Rest and Spread Operators](./02-spread-rest/SPREAD_STUFF.md)
 
 # Overall Notes
 ## Project Setup
