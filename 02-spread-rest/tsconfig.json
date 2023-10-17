@@ -1,0 +1,12 @@
+// Have to make this to keep javascript files as notes
+
+// may be a good idea to have a javascript folder and a typescript folder in
+// the future?
+{
+    "compilerOptions": {
+        "target": "ES5",
+        "outDir": "dist",
+        "rootDir": "./"
+    },
+    "include": ["spread.ts"]
+}
